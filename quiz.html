@@ -3,9 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Quiz</title>
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="general.css">
+  <link rel="stylesheet" href="cards.css">
+  <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
-  
+  <div id="quizScreen">
+    <div class="screen" id="questionScreen"></div>
+    <div class="controls">
+      <button id="prevButton" onclick="showPreviousQuestion()">Previous</button>
+      <p id="questionNumber"></p>
+      <button id="nextButton" onclick="handleNextButton()">Next</button>
+    </div>
+  </div>
+
+  <div id="scoreScreen" class="hide">
+    <h2 id="scoreTitle"></h2>
+    <p id="score"></p>
+    <button onclick="goToQuizList()">Finish Quiz</button>
+  </div>
+
+  <script src="quiz.js"></script>
 </body>
 </html>
