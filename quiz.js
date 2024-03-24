@@ -1,4 +1,4 @@
-let host = "http://localhost:8080";
+let host = "https://c322-midterm-backend-latest-1ypt.onrender.com";
 let quiz;
 let currentQuestionIndex = 0;
 let score = 0;
@@ -14,7 +14,7 @@ async function getQuiz() {
 function displayQuestion(question) {
   let questionScreen = document.getElementById("questionScreen");
   questionScreen.innerHTML = `
-    <img src="http://localhost:8080/questions/${question.id}/image" alt="question" class="question-image">
+    <img src="https://c322-midterm-backend-latest-1ypt.onrender.com/questions/${question.id}/image" alt="question" class="question-image">
     <h3>${question.description}</h3>
     <form>
       <input type="radio" id="optionA" name="answer" value="${question.choices[0]}">
