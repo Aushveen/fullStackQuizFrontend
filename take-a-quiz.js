@@ -1,4 +1,4 @@
-let host = "https://c322-midterm-backend-latest-1ypt.onrender.com";
+let host = "http://localhost:8080";
 let quizzes = [];
 
 async function getAll() {

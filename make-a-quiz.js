@@ -1,4 +1,4 @@
-let host = "https://c322-midterm-backend-latest-1ypt.onrender.com";
+let host = "http://localhost:8080";
 let questions = [];
 let quizQuestions = [];
 let quizId = null;
@@ -24,7 +24,7 @@ async function displayQuestions() {
       addToQuiz(question);
     };
     let innerHtml = `
-      <img src="https://c322-midterm-backend-latest-1ypt.onrender.com/questions/${question.id}/image" alt="question" style="width:100%">
+      <img src="http://localhost:8080/questions/${question.id}/image" alt="question" style="width:100%">
       <div class="container">
         <h4><b>${question.id}</b></h4> 
         <p>${question.description}</p>
@@ -61,7 +61,7 @@ function displayQuizQuestions() {
       removeFromQuiz(question);
     };
     let innerHtml = `
-      <img src="https://c322-midterm-backend-latest-1ypt.onrender.com/questions/${question.id}/image" alt="question" style="width:100%">
+      <img src="http://localhost:8080/questions/${question.id}/image" alt="question" style="width:100%">
       <div class="container">
         <h4><b>${question.id}</b></h4> 
         <p>${question.description}</p>
